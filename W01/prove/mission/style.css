@@ -34,7 +34,6 @@ header, main, footer, hr {
     font-weight: 600;
     letter-spacing: 0.22em;
     color: #2E6CB8;
-    /* change this hex value */
     text-transform: uppercase;
     margin: 0 0 20px;
 }
