@@ -11,8 +11,7 @@ console.log(policyDisclaimer);
 const username = "billybob";
 
 // Scope = where you can reference a variable by name
-if (age == 22)
-{
+if (age == 22) {
     // New Scope
     console.log(username);
     let favoriteColor = "blue";
@@ -23,5 +22,3 @@ if (age == 22)
 
 // Grab our H1 from the DOM and change its color to blue
 document.querySelector("h1").style.color = "blue";
-
-
