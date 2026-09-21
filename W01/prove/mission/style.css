@@ -1,24 +1,25 @@
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background: #F4F4F4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 60px 20px;
+    font-family: Arial, sans-serif;
+    margin: 2rem;
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-
-header, main, footer, hr {
+header,
+main,
+footer,
+hr {
     max-width: 640px;
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
-
 
 #intro {
     text-align: center;
     padding: 56px 64px 0;
 }
-
 
 #intro h1 {
     font-family: 'Playfair Display', Georgia, serif;
@@ -27,7 +28,6 @@ header, main, footer, hr {
     color: #1a1a1a;
     margin: 0 0 12px;
 }
-
 
 #intro h3 {
     font-size: 12px;
@@ -38,18 +38,15 @@ header, main, footer, hr {
     margin: 0 0 20px;
 }
 
-
 hr {
     border: none;
     border-top: 1px solid #DADADA;
     margin: 0 auto 28px;
 }
 
-
 main {
     padding: 0 64px;
 }
-
 
 .first-paragraph p {
     text-align: left;
@@ -59,7 +56,6 @@ main {
     margin: 0 0 20px;
 }
 
-
 .first-paragraph h4 {
     font-style: italic;
     font-weight: normal;
@@ -68,12 +64,10 @@ main {
     margin: 0 0 16px;
 }
 
-
 .list {
     display: block;
     margin-bottom: 32px;
 }
-
 
 .list li {
     list-style: none;
@@ -84,13 +78,40 @@ main {
     margin-bottom: 16px;
 }
 
-
 footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     padding: 0 64px 56px;
 }
 
-
 footer img {
     margin-top: 12px;
+    display: block;
+}
+
+
+
+body.dark {
+    background-color: #333333;
+    color: white;
+}
+
+
+body.dark #intro h1,
+body.dark .first-paragraph p,
+body.dark .first-paragraph h4,
+body.dark .list li {
+    color: #ffffff;
+}
+
+
+body.dark #intro h3 {
+    color: #61A0FF;
+}
+
+
+body.dark hr {
+    border-top-color: #555555;
 }
