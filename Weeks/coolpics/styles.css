@@ -56,6 +56,24 @@ body {
     display: none;
 }
 
+.site-nav.is-open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.site-nav a {
+    color: inherit;
+    font-size: .9rem;
+    text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-nav a:focus-visible {
+    text-decoration: underline;
+}
+
 
 main {
     padding: 0 16px 12px;
@@ -87,6 +105,18 @@ figure {
     box-shadow: 0 2px 5px #555;
 }
 
+.image-button {
+    display: block;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.image-button:focus-visible {
+    outline: 3px solid #287de0;
+    outline-offset: 3px;
+}
 
 figure img {
     display: block;
@@ -95,7 +125,41 @@ figure img {
     object-fit: cover;
 }
 
+.image-modal {
+    position: relative;
+    width: min(90vw, 900px);
+    max-width: none;
+    max-height: 90vh;
+    padding: 42px 12px 12px;
+    border: 0;
+    background: #fff;
+    box-shadow: 0 4px 18px #111;
+}
 
+.image-modal::backdrop {
+    background: rgb(0 0 0 / 80%);
+}
+
+.modal-image {
+    display: block;
+    max-width: 100%;
+    max-height: calc(90vh - 60px);
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+.modal-close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    padding: 0 6px;
+    border: 0;
+    background: transparent;
+    color: #171717;
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
+}
 
 footer {
     padding: 5px 12px;
@@ -127,6 +191,11 @@ footer {
         color: inherit;
         font-size: .78rem;
         text-decoration: none;
+    }
+
+    .site-nav.is-open {
+        flex-direction: row;
+        gap: 18px;
     }
 
     .site-nav a:hover,
