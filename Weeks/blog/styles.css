@@ -85,6 +85,12 @@ body {
     font-style: italic;
 }
 
+.book-age-range {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
 
 .book-content {
     display: flex;
