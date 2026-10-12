@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --primary-color: #7b1113;
+    --light-bg: #fffbf7;
+    --border-color: #e5ccb2;
+    --text-color: #222222;
+    --font-family: Georgia, serif;
+}
+
+
+body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+
+.site-header {
+    border-bottom: 2px solid var(--primary-color);
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+
+
+.site-title {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+
+.site-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+.site-nav a{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+
+.site-nav a:hover,
+.site-nav a:focus{
+    text-decoration: underline;
+}
+
+
+.main-content {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+
+.book-article{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+
+.book-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+
+.book-date{
+    font-style: italic;
+}
+
+
+.book-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.book-title {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+
+.book-image-container img{
+    max-width: 200px;
+    height: auto;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+.book-description{
+    max-width: 450px;
+}
+
+
+.site-footer{
+    text-align: center;
+    padding: 1.5rem;
+    font-weight: bold;
+}
+
+
+@media screen and (min-width: 768px) {
+    .site-header {
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 3rem;
+    }
+
+    .site-title {
+        margin-bottom: 0;
+    }
+
+    .site-nav ul {
+        justify-content: flex-end;
+    }
+
+    .book-article {
+        /* CSS Grid matching the design specification: 2 columns with a divider line */
+        grid-template-columns: 220px 1fr;
+        position: relative;
+    }
+
+    /* Vertical dividing rule seen in the desktop design wireframe */
+    .book-article::after {
+        content: "";
+        position: absolute;
+        left: 240px;
+        top: 0;
+        bottom: 0;
+        width: 1px;
+        background-color: var(--primary-color);
+    }
+
+    .book-details {
+        text-align: right;
+        padding-right: 2rem;
+    }
+
+    .book-content {
+        padding-left: 2rem;
+    }
+}
