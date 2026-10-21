@@ -49,10 +49,12 @@ movies.forEach(movie => {
     <article class="movie">
         <h2>${movie.title}</h2>
         <img src="${movie.imgSrc}" alt="${movie.imgAlt}">
-        <p><strong>Release Date:</strong>${movie.date}</p>
-        <p><strong>Recommeded Age:</strong>${movie.age}</p>
-        <p><strong>Genre:</strong>${movie.genre}</p>
-        <p><strong>Rating:</strong>${movie.stars}</p>
+        <div class="movie-info">
+            <p><strong>Release Date:</strong> ${movie.date}</p>
+            <p><strong>Recommended Age:</strong> ${movie.ages}</p>
+            <p><strong>Genre:</strong> ${movie.genre}</p>
+            <p><strong>Rating:</strong> ${movie.stars}</p>
+        </div>
         <p class="desc">${movie.description}</p>
     </article>
 `;
