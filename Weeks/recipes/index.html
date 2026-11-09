@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find a cozy fall dessert in the RecipeBook: an easy apple crisp served warm with vanilla ice cream.">
+    <meta name="theme-color" content="#ffffff">
+    <title>Apple Crisp | RecipeBook</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Apple Crisp | RecipeBook">
+    <meta property="og:description" content="A simple, delicious fall dessert that's great served warm with vanilla ice cream.">
+    <meta property="og:url" content="https://byui-hera.github.io/WDD131--Javascript-/recipes/">
+    <meta property="og:image" content="https://byui-hera.github.io/WDD131--Javascript-/recipes/images/social-preview-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- X Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Apple Crisp | RecipeBook">
+    <meta name="twitter:description" content="A simple, delicious fall dessert that's great served warm with vanilla ice cream.">
+    <meta name="twitter:image" content="https://byui-hera.github.io/WDD131--Javascript-/recipes/images/social-preview-image.png">
+
+    <link rel="icon" href="images/recipe-book.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+</head>
+<body>
+    <header class="site-header">
+        <a class="logo" href="index.html" aria-label="RecipeBook home">
+            <img src="images/recipe-book.png" alt="">
+            <h1>RecipeBook</h1>
+        </a>
+    </header>
+
+    <main>
+        <form class="search" role="search">
+            <label class="visually-hidden" for="recipe-search">Find a recipe</label>
+            <input id="recipe-search" type="search" name="q" placeholder="Find a recipe">
+            <button type="submit" aria-label="Search recipes">
+                <img src="images/search.svg" alt="">
+            </button>
+        </form>
+
+        <section class="recipes" aria-label="Recipes">
+            <article class="recipe-card">
+                <img class="recipe-image" src="images/apple-crisp.jpg" alt="Warm apple crisp topped with vanilla ice cream">
+                <div class="recipe-info">
+                    <span class="recipe-tag">dessert</span>
+                    <h2>Apple Crisp</h2>
+                    <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
+                        <span aria-hidden="true" class="icon-star">⭐</span>
+                        <span aria-hidden="true" class="icon-star">⭐</span>
+                        <span aria-hidden="true" class="icon-star">⭐</span>
+                        <span aria-hidden="true" class="icon-star">⭐</span>
+                        <span aria-hidden="true" class="icon-star-empty">☆</span>
+                    </span>
+                    <p class="description">This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.</p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <a class="flaticon-credit" href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
+        <div class="social">
+            <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates -->
+            <a href="#" aria-label="Instagram"><img src="images/instagram_icon.svg" alt=""></a>
+            <a href="#" aria-label="YouTube"><img src="images/youtube_icon.svg" alt=""></a>
+            <a href="#" aria-label="Pinterest"><img src="images/pinterest_icon.svg" alt=""></a>
+        </div>
+    </footer>
+</body>
+</html>
