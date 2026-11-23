@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" role="img" aria-labelledby="title desc">
+  <title id="title">StudySpots logo</title>
+  <desc id="desc">An open book with a map pin</desc>
+  <rect width="180" height="180" rx="24" fill="#F8FAFC"/>
+  <path d="M90 48c-19-12-41-14-58-8v71c19-5 39-2 58 10V48z" fill="#2563EB"/>
+  <path d="M90 48c19-12 41-14 58-8v71c-19-5-39-2-58 10V48z" fill="#0F172A"/>
+  <path d="M90 57c10-7 22-10 35-9M90 74c10-7 22-10 35-9M90 91c10-7 22-10 35-9" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
+  <path d="M48 73c8-5 17-7 25-6M48 90c8-5 17-7 25-6" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
+  <path d="M127 72c0 22-34 51-34 51S59 94 59 72a34 34 0 1 1 68 0z" fill="#F59E0B" stroke="#FFFFFF" stroke-width="6"/>
+  <circle cx="93" cy="71" r="11" fill="#FFFFFF"/>
+</svg>

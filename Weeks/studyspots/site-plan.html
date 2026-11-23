@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudySpots Site Plan</title>
+    <link rel="stylesheet" href="styles/site-plan.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/logo.svg" alt="StudySpots logo">
+        <h1>StudySpots - Site Plan</h1>
+        <p>Campus &amp; Local Study Spot Finder</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Purpose &amp; Audience</h2>
+            <p><strong>Purpose:</strong> Help students find study spaces by noise level, outlet access, and crowd comfort; save favorites; and log quick check-ins.</p>
+            <p><strong>Audience:</strong> College students and remote learners looking for reliable places to focus.</p>
+        </section>
+
+        <section>
+            <h2>Logo</h2>
+            <img class="logo-plan" src="images/logo.svg" alt="StudySpots logo shown as a book and map pin">
+            <p>The logo combines an open book with a location pin to represent finding productive places to study.</p>
+        </section>
+
+        <section>
+            <h2>Colors &amp; Fonts</h2>
+            <p><strong>Primary Dark Blue:</strong> #0F172A - headers, footer, and primary text areas.</p>
+            <p><strong>Primary Blue:</strong> #2563EB - links, buttons, and active controls.</p>
+            <p><strong>Accent Gold:</strong> #F59E0B - favorites and small highlights.</p>
+            <p><strong>Light Background:</strong> #F8FAFC - page background.</p>
+            <p><strong>Body Text:</strong> #1E293B - readable slate for normal content.</p>
+            <p><strong>Fonts:</strong> <code>system-ui, sans-serif</code> for the interface and body text; <code>Georgia, serif</code> for major page headings.</p>
+        </section>
+
+        <section>
+            <h2>Dynamic Elements: (JavaScript)</h2>
+            <ul>
+                <li><strong>Data:</strong> Array of study spot objects (<code>id</code>, <code>name</code>, <code>zone</code>, <code>noise</code>, <code>outlets</code>, <code>crowd</code>,
+                <code>favorite</code>).</li>
+                <li><strong>Array Methods:</strong><code>.filter()</code> for filters, <code>.map()</code> to render spot cards, and <code>.reduce()</code> for average
+                crowd score and favorite counts.</li>
+                <li><strong>DOM &amp; Events:</strong><code>change</code> on filters, <code>click</code> on favorite/check-in buttons, and <code>submit</code> on a quick-add
+                form.</li>
+                <li><strong>Logic &amp; Functions:</strong><code>if/else</code> checks for empty states and blank inputs across functions like <code>getFilteredSpots()</code>,
+                <code>renderSpots()</code>, and <code>updateStats()</code>.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Pseudocode</h2>
+            <pre><code>1. Store spots array and grab DOM elements (filters, lists, stats, form).
+                2. getFilteredSpots(): filter by zone, noise, and outlets; return matches.
+                3. renderSpots(list): 
+                - IF list is empty, show reset message.
+                - ELSE map spots to cards, render HTML, and update stats with .reduce().
+                4. Listen for filter changes, favorite/check-in clicks, and new-spot form submit.
+                5. Render initial spots on page load.
+            </code></pre>
+        </section>
+
+        <section>
+            <h2>Planned Content</h2>
+            <h3>Home / Main Page</h3>
+            <p><strong>Heading:</strong> Find your next focus spot.</p>
+            <p><strong>Introduction:</strong> "Compare campus and neighborhood study spaces based on noise, outlets, crowd level, and recent check-ins."</p>
+            <p><strong>Spot cards:</strong> "Library Quiet Zone - Low noise - 8 outlets - Comfortable crowd", "Student Union Cafe - Moderate noise - 12 outlets - Busy now", and "Riverside Reading Room - Low noise - 4 outlets - Quiet now."</p>
+            <h3>Spot Detail / Child Page</h3>
+            <p><strong>Example heading:</strong> Library Quiet Zone</p>
+            <p><strong>Sample description:</strong> "A quiet second-floor reading area near the west entrance. Tables include shared outlets, and natural light is strongest in the morning."</p>
+            <p><strong>Details:</strong> Building hours, address, noise level, outlet availability, current crowd level, and recent student check-in notes.</p>
+            <p><strong>Actions:</strong> Save to favorites, view directions, or add a check-in.</p>
+        </section>
+
+        <section>
+            <h2>Wireframes</h2>
+            <h3>1. Home Page</h3>
+            <img src="images/wireframe-studyspots.jfif" alt="StudySpots home page wireframe for mobile and desktop" width="800" height="500">
+            <p>The home view includes navigation, a search/filter area, spot cards, and saved-favorites access.</p>
+            <h3>2. Spot Detail (Child) Page</h3>
+            <img src="images/wireframe-detail.svg" alt="StudySpots detail page wireframe" width="800" height="500">
+            <p>The child view shows one selected spot with its image, amenities, crowd and noise information, check-ins, directions, and save button.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>WDD131 Final Project Plan</p>
+    </footer>
+</body>
+</html>
